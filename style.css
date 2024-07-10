@@ -5,6 +5,10 @@
     font-family: "figtree";
 }
 
+body.no-scroll {
+    overflow: hidden;
+  }
+
 .wrapper .logo a{
     display: flex;
     align-items: center;
