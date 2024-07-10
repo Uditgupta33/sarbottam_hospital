@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Your Appointment- Sharbottam Hospital</title>
+    <link rel="icon" href="./assets/logo/logo web.png">
+    <link rel="stylesheet" href="appointment.css">
+</head>
+
+<body>
+
+    <div class="logo-cont">
+        <a href="./index.html"><img src="./assets/logo/resetImage.png" alt=""></a>
+    </div>
+
+    <section class="contact">
+        <h2>Make Appointment</h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                    <div class="error-txt">Full Name can't be blank </div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Email" id="email" class="item" autocomplete="off">
+                    <div class="error-txt email">Email Address Can't be blank  </div>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                    <div class="error-txt">Phone can't be blank </div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                    <div class="error-txt">Subject can't be blank </div>
+                </div>
+            </div>
+
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item"
+                    autocomplete="off"></textarea>
+                    <div class="error-txt">Message can't be blank</div>
+
+                </div>
+                <button type="submit">Send Message</button>
+        </form>
+
+    </section>
+
+<!-- message validater cdn -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="appointment.js"></script>
+<!-- message sent sweetalart2 cdn -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

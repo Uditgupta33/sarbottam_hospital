@@ -4,9 +4,6 @@
     box-sizing: border-box;
     font-family: "figtree";
 }
-/* html,body{
-    width: 100%;
-} */
 
 .wrapper .logo a{
     display: flex;
