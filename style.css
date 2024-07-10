@@ -267,6 +267,11 @@ main{
     border: 2px solid #f7a582;
     color: #f7a582;
     background-color: #07332F;
+    cursor: pointer;
+}
+.heroBtn-cont button a{
+    text-decoration: none;
+    color: #f7a582;
 }
 
 /* main hero-container img */
