@@ -226,12 +226,10 @@ main{
 
 .hero-text{
     width: 40%;
-    /* min-width: 300px; */
     height: 80%;
     padding: 10px 60px 10px 10px;
     padding-top: 2%;
     margin: 0px 0 0 9%;
-    /* background-color: #3a3b3a; */
     font-size: 18px;
     overflow: hidden;
 }
@@ -250,7 +248,6 @@ main{
 
 .text-intro {
     width: 100%;
-    /* min-height: 81px; */
     color: #839997;
     padding-top: 15px;
 }
@@ -280,7 +277,6 @@ main{
 .hero-img{
     width: 50%;
     height: 555px;
-    /* background-color: gold; */
     display: flex;
 }
 
@@ -292,7 +288,6 @@ main{
 .img1{
     margin-top: 15%;
     overflow: hidden;    
-    /* margin-left: 16px; */
 }
 
 .img1 img{
@@ -708,7 +703,7 @@ main{
 
 .team-img{
     background-color: #f5f7fb;
-    padding: 10px 10px 0px 10px;
+    padding: 10px 10px 0px 30px;
     border-radius: 10px;
     height: 300px;
     display: flex;
