@@ -676,11 +676,11 @@ main{
 
 /*==our-team====================*/
 #our-team{
-    max-width: 1200px;
-    width: 90%;
+    /* max-width: 1200px; */
+    /* width: 90%; */
     height: 405px;
     margin: 80px auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .our-team-heading{
     display: flex;
@@ -700,12 +700,13 @@ main{
 }
 .team-box-container{
     width: 100%;
-    overflow: hidden;
+    height: 420px;
 }
 .team-box{
     width: 300px;
     max-width: 100%; /* 300px*/
     height: 100%;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -713,7 +714,7 @@ main{
 
 .team-img{
     background-color: #f5f7fb;
-    padding: 10px 10px 0px 30px;
+    padding: 10px 10px 0px 19px;
     border-radius: 10px;
     height: 300px;
     display: flex;
@@ -727,6 +728,7 @@ main{
     object-position: top center;
 }
 .team-text{
+    height: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -736,12 +738,14 @@ main{
     margin-top: 10px;
 }
 .team-text strong{
+    height: 25px;
     color: #122853;
 }
 .team-text span{
     color: #303030;
     font-size: 0.9rem;
     margin-top: 5px;
+    height: 20px;
 }
 
 

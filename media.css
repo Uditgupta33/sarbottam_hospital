@@ -508,7 +508,8 @@
     font-size: 35px;
   }
   .team-box-container{
-    margin-left: 8%;
+    margin-left: 0%;
+    padding-left: 9%;
   }
   .facilities-box-container{
     margin-left: 0;
@@ -521,7 +522,7 @@
 /* 381 */
 @media screen and (max-width: 381px){
   .facilities-box-container{
-    margin-left: 8%;
+    margin-left: 0%;
   }
 }
 /* 378 */
@@ -531,7 +532,7 @@
     margin-top: 15%;
   }
   .team-box-container{
-    margin-left: 2.5%;
+    margin-left: 0;
   }
   .facilities-box-container{
     margin-right: 0;
@@ -563,4 +564,13 @@
     width: 150px;
     height: 425px;
 }
+}
+
+@media screen and (max-width: 320px) {
+  .team-box-container{
+    padding-left: 5%;
+  }
+  .facilities-box{
+    margin-left: 0;
+  }
 }

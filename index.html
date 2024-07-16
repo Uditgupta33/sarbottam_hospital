@@ -20,6 +20,8 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- swiper js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- javaScript -->
+    <script src="./"></script>
 
 </head>
 
@@ -34,9 +36,9 @@
             <input type="radio" name="slide" id="menu-btn">
             <input type="radio" name="slide" id="cancel-btn">
 
-            <ul class="nav-links" sidebar>
-                <label for="cancel-btn" id="toggle" class=" btn cancel-btn"><i class="fas fa-times"></i></label>
-                <li id="active"><a href="#">Home</a></li>
+            <ul class="nav-links" >
+                <label for="cancel-btn" class=" btn cancel-btn"><i class="fas fa-times"></i></label>
+                <li id="active"><a href="#" id="toggle">Home</a></li>
                 <li><a href="#about-box">About Us</a></li>
                 <li>
                     <a href="#" class="desktop-item">Services</a>
@@ -888,9 +890,9 @@
         var swiper = new Swiper(".mySwiperteam", {
             slidesPerView: 1,
             spaceBetween: 10,
-            autoplay: {
-                delay: 2000,
-            },
+            // autoplay: {
+            //     delay: 2000,
+            // },
             breakpoints: {
                 560: {
                     slidesPerView: 2,
