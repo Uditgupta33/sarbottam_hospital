@@ -1,14 +1,20 @@
+@media screen and (min-width: 1261px) {
+  .about-cont{
+    height: 800px;
+  }
+}
 /* 1260 */
 @media screen and (max-width: 1260px) {
   main {
     overflow: hidden;
+    height: 1050px;
   }
   .about-cont {
     overflow: hidden;
   }
   .about{
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
   }
   .about-img{
     margin: 0 auto;
@@ -16,12 +22,9 @@
     height: 740px;
   }
   .aboutText-cont{
-    width: 100%;
-    height: 300px;
-    margin: 0 5px;
-  }
-  .appointment-Container{
-    margin-top: 40%;
+    width: 95%;
+    /* height: 600px; */
+    margin-left: 0 5px;
   }
   .aboutIntro{
     margin: 10px;
@@ -202,7 +205,7 @@
   /* intro-cont */
 
   .intro-cont {
-    margin-top: 32%;
+    margin-top: 6%;
   }
 
   /* about-cont */
@@ -267,7 +270,7 @@
 }
 @media screen and (max-width: 941px){
   .appointment-Container{
-    margin-top: 48px;
+    margin-top: 0;
   }
 }
 
@@ -413,7 +416,7 @@
 
 @media screen and (max-width: 768px) {
   nav .wrapper {
-    width: 100%;
+    width: 94%;
   }
   .text-animation {
     margin-bottom: 4px;
@@ -433,9 +436,6 @@
   .aboutImg2 img {
     width: 100%;
   }
-  .appointment-Container {
-    margin-top: 80px;
-  }
   .aapo-texts h3 {
     font-size: 20px;
   }
@@ -450,12 +450,18 @@
   }
 }
 
+@media screen and (max-width: 893px){
+  .about-cont{
+    height: 1370px;
+  }
+}
 /* responisve for 880px */
 
 @media screen and (max-width: 880px) {
   .intro-cont {
     width: 100%;
     height: 650px;
+    margin-top: 4px;
   }
   .intro-list {
     width: 100%;
@@ -477,27 +483,9 @@
   }
 }
 
-/* 860 */
-
-@media screen and (max-width: 840px){
-  .intro-cont{
-    margin-top: 35%;
-  }
-}
-
-/* 698 */
-
-@media screen and (max-width: 698px){
-  .intro-cont{
-    margin-top: 50%;
-  }
-}
 
 /* 564 */
 @media screen and (max-width: 564px){
-  .intro-cont{
-    margin-top: 55%;
-  }
   .team-box-container{
     margin-left: 16%;
   }
@@ -508,9 +496,6 @@
 
 /* 506 */
 @media screen and (max-width: 506px){
-  .intro-cont{
-    margin-top: 65%;
-  }
   .hero-img img{
     height: 375px;
   }
@@ -519,12 +504,6 @@
 /* 448 */
 
 @media screen and (max-width: 448px){
-  .intro-cont{
-    margin-top: 75%;
-  }
-  .appointment-Container{
-    margin-top: 30%;
-  }
   .our-team-heading h3{
     font-size: 35px;
   }
@@ -532,15 +511,15 @@
     margin-left: 8%;
   }
   .facilities-box-container{
-    margin-left: 15%;
+    margin-left: 0;
+  }
+  .aboutText-cont{
+    height: 640px;
   }
 }
 
 /* 381 */
 @media screen and (max-width: 381px){
-  .appointment-Container{
-    margin-top: 38%;
-  }
   .facilities-box-container{
     margin-left: 8%;
   }
@@ -549,7 +528,7 @@
 
 @media screen and (max-width: 378px){
   .intro-cont{
-    margin-top: 85%;
+    margin-top: 15%;
   }
   .team-box-container{
     margin-left: 2.5%;
@@ -564,9 +543,6 @@
   .intro-cont{
     margin-top: 90%;
     width: 100%;
-  }
-  .appointment-Container{
-    margin-top: 40%;
   }
   .text-animation p{
     font-size: 30px;
@@ -588,4 +564,3 @@
     height: 425px;
 }
 }
-/* 320px */
