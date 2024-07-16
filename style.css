@@ -780,7 +780,7 @@ main{
 .facilities-box-container{
     width: 100%;
     overflow: hidden;
-    padding: 0  0 0 90px;
+    padding: 0  0 0 0;
 }
 
 .facilities-box{
