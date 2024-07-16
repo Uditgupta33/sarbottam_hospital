@@ -4,11 +4,6 @@
     box-sizing: border-box;
     font-family: "figtree";
 }
-
-body{
-    min-height: 100vh;
-    width: 100vw;
-}
 .wrapper .logo a{
     display: flex;
     align-items: center;
@@ -291,7 +286,6 @@ main{
     width: 50%;
     height: 555px;
     display: flex;
-    overflow: hidden;
 }
 
 .heroImg img{
@@ -423,7 +417,6 @@ main{
     min-height: 100%;
     display: flex;
     justify-content: space-around;
-    overflow: hidden;
 }
 
 .aboutImg1 img{
@@ -458,7 +451,6 @@ main{
     height: 635;
     margin-left: 10%;
     padding-top: 50px;
-    overflow: hidden;
 }
 
 .about-section h3{
@@ -568,7 +560,6 @@ main{
     width: 100%;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    overflow: hidden;
 }
 .why-choose-us-left{
     padding: 50px;
@@ -792,7 +783,6 @@ main{
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    overflow: hidden;
 }
 
 

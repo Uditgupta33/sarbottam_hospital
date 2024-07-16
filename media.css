@@ -1,5 +1,11 @@
 /* 1260 */
 @media screen and (max-width: 1260px) {
+  main {
+    overflow: hidden;
+  }
+  .about-cont {
+    overflow: hidden;
+  }
   .about{
     flex-direction: column;
     width: 100%;
