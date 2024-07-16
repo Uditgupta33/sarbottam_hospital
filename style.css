@@ -680,6 +680,7 @@ main{
     width: 90%;
     height: 405px;
     margin: 80px auto;
+    overflow: hidden;
 }
 .our-team-heading{
     display: flex;
@@ -749,6 +750,7 @@ main{
 #Our-Specialities{
     width: 1200px;
     height: 405px;
+    /* overflow: hidden; */
 }
 
 .our-specialities-heading{
