@@ -5,10 +5,10 @@
     font-family: "figtree";
 }
 
-body.no-scroll {
-    overflow: hidden;
-  }
-
+body{
+    min-height: 100vh;
+    width: 100vw;
+}
 .wrapper .logo a{
     display: flex;
     align-items: center;
@@ -72,7 +72,7 @@ body::-webkit-scrollbar{
     transition: all 0.3s ease;
 }
 .nav-links li a:hover{
-    background: #3a3b3a;
+    background: #f7a582;
 }
 /* mobile items */
 .nav-links .mobile-item{
@@ -80,7 +80,8 @@ body::-webkit-scrollbar{
 }
 .nav-links .drop-menu{
     background: #242526;
-    width: 180px;
+    width: 250px;
+    border-radius: 5px;
     top: 80px;
     line-height: 45px;
     position: absolute;
@@ -99,7 +100,7 @@ body::-webkit-scrollbar{
 .drop-menu li a{
     width: 100%;
     display: block;
-    padding: 0 0 0 15 px;
+    padding: 0 0 0 15px;
     font-weight: 400;
 }
 
@@ -177,15 +178,20 @@ body::-webkit-scrollbar{
     right: 30px;
     top: 10px;
 }
+.call{
+    padding-right: 6px;
+}
 
-.appointment-cont{
+.appointment-cont,
+.appointment-cont1{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.appointmentBtn{
+.appointmentBtn,
+.appointmentBtn1{
     width: 247px;
     height: 51px;
     color: #f7a582;
@@ -198,7 +204,8 @@ body::-webkit-scrollbar{
     cursor: pointer;
 }
 
-.appointmentBtn span{
+.appointmentBtn span,
+.appointmentBtn1 span{
     position: absolute;
     padding-left: 3px;
     padding-bottom: 6px;
@@ -284,9 +291,10 @@ main{
     width: 50%;
     height: 555px;
     display: flex;
+    overflow: hidden;
 }
 
-.heroImg{
+.heroImg img{
     width: 250px;
     height: 425px;
 }
@@ -298,12 +306,12 @@ main{
 
 .img1 img{
     width: 100%;
-    border-radius: 50%;
+    border-radius: 32%;
 }
 
 .img2 img{
     width: 100%;
-    border-radius: 50%;
+    border-radius: 32%;
 }
 
 .img2{
@@ -415,6 +423,7 @@ main{
     min-height: 100%;
     display: flex;
     justify-content: space-around;
+    overflow: hidden;
 }
 
 .aboutImg1 img{
@@ -449,6 +458,7 @@ main{
     height: 635;
     margin-left: 10%;
     padding-top: 50px;
+    overflow: hidden;
 }
 
 .about-section h3{
@@ -558,6 +568,7 @@ main{
     width: 100%;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
+    overflow: hidden;
 }
 .why-choose-us-left{
     padding: 50px;
@@ -746,7 +757,6 @@ main{
 #Our-Specialities{
     width: 1200px;
     height: 405px;
-    /* margin: 80px auto; */
 }
 
 .our-specialities-heading{
@@ -782,6 +792,7 @@ main{
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    overflow: hidden;
 }
 
 
@@ -922,6 +933,7 @@ footer{
     text-align: center;
     font-size: 18px;
     background: #fff;
+    margin-top: auto 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -933,6 +945,7 @@ footer{
     height: 100%;
     object-fit: cover;
   }
+  
 
   .swiper {
     width: 100%;
@@ -957,4 +970,3 @@ footer{
     font-size: 13px;
   }
 
-  

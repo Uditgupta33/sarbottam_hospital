@@ -172,7 +172,7 @@
     height: 1200px;
   }
   .hero-text {
-    width: 100%;
+    width: 98%;
     height: 360px;
     margin-left: 5px;
   }
@@ -276,7 +276,7 @@
 
 @media screen and (max-width: 728px) {
   .text-animation p {
-    font-size: 35px;
+    font-size: 34px;
   }
 }
 
@@ -308,7 +308,7 @@
 @media screen and (max-width: 620px) {
   .why-choose-us-right,
   .why-choose-us-left {
-    padding: 30px 20px;
+    padding: 30px 5px;
   }
   .why-choose-box-container {
     grid-template-columns: 1fr;
@@ -348,7 +348,7 @@
   }
 
   .appointmentBtn {
-    width: 80px;
+    width: 85px;
     height: 51px;
     font-size: 10px;
     padding: 0;
@@ -359,6 +359,15 @@
   .img2{
     margin-right: 0;
   }
+  .box2-text p,
+  .box3-text p{
+    font-size: 15px;
+  }
+  .box2-text span,
+  .box3-text span{
+    font-size: 20px;
+  }
+
 }
 
 /* responisve for 1024px */
@@ -431,7 +440,7 @@
     margin-top: 70%;
   }
   .facilities-box-container{
-    padding: 0 0 0 30px;
+    padding: 0 0 0 22px;
   }
 }
 
@@ -483,12 +492,21 @@
   .intro-cont{
     margin-top: 55%;
   }
+  .team-box-container{
+    margin-left: 16%;
+  }
+  .facilities-box-container{
+    margin-left: 16%;
+  }
 }
 
 /* 506 */
 @media screen and (max-width: 506px){
   .intro-cont{
     margin-top: 65%;
+  }
+  .hero-img img{
+    height: 375px;
   }
 }
 
@@ -501,6 +519,15 @@
   .appointment-Container{
     margin-top: 30%;
   }
+  .our-team-heading h3{
+    font-size: 35px;
+  }
+  .team-box-container{
+    margin-left: 8%;
+  }
+  .facilities-box-container{
+    margin-left: 15%;
+  }
 }
 
 /* 381 */
@@ -508,12 +535,21 @@
   .appointment-Container{
     margin-top: 38%;
   }
+  .facilities-box-container{
+    margin-left: 8%;
+  }
 }
 /* 378 */
 
 @media screen and (max-width: 378px){
   .intro-cont{
     margin-top: 85%;
+  }
+  .team-box-container{
+    margin-left: 2.5%;
+  }
+  .facilities-box-container{
+    margin-right: 0;
   }
 }
 

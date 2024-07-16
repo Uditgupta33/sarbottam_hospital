@@ -34,8 +34,8 @@
             <input type="radio" name="slide" id="menu-btn">
             <input type="radio" name="slide" id="cancel-btn">
 
-            <ul class="nav-links">
-                <label for="cancel-btn" class=" btn cancel-btn"><i class="fas fa-times"></i></label>
+            <ul class="nav-links" sidebar>
+                <label for="cancel-btn" id="toggle" class=" btn cancel-btn"><i class="fas fa-times"></i></label>
                 <li id="active"><a href="#">Home</a></li>
                 <li><a href="#about-box">About Us</a></li>
                 <li>
@@ -43,10 +43,10 @@
                     <input type="checkbox" id="showDrop">
                     <label for="showDrop" class="mobile-item">Our Services</label>
                     <ul class="drop-menu">
-                        <li><a href="#">services 1</a></li>
-                        <li><a href="#">services 2</a></li>
-                        <li><a href="#">services 3</a></li>
-                        <li><a href="#">services 4</a></li>
+                        <li><a href="#">Emergency Service 24hrs</a></li>
+                        <li><a href="#">Radiology Service</a></li>
+                        <li><a href="#">Endoscopy Service</a></li>
+                        <li><a href="#">Infertility Service & More...</a></li>
                     </ul>
                 </li>
                 <li>
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="#why-choose-us">Contact Us</a></li>
+                <li><a href="">Contact Us</a></li>
             </ul>
 
             <div class="appointment-cont">
@@ -257,9 +257,9 @@
                         serve you better.</p>
                 </div>
             </div>
-            <div class="appointment-cont">
+            <div class="appointment-cont1">
                 <a href="./appointment.html" target="_blank">
-                    <button class="appointmentBtn">Make Appointment <span class="material-symbols-outlined">
+                    <button class="appointmentBtn1">Make Appointment <span class="material-symbols-outlined">
                         calendar_month
                     </span>
                 </button>
@@ -874,6 +874,21 @@
 
     <!-- Initialize Swiper -->
     <script>
+        // js 
+        const toggle = document.getElementById('toggle');
+        const sidebar = document.getElementById('sidebar');
+
+        document.onclick = function(e){
+            if(e.target.id !== "sidebar" && e.target.id !== "toggle"){
+                toggle.classList.remove(active);
+                sidebar.classList.remove(active);
+            }}
+
+             toggle.onclick = function(){
+            toggle.classList.toggle('active')
+            sidebar.classList.toggle('active');
+        }
+
         /*--team--*/
         var swiper = new Swiper(".mySwiperteam", {
             slidesPerView: 1,
@@ -902,9 +917,9 @@
         var swiper = new Swiper(".mySwiperFacility", {
             slidesPerView: 1,
             spaceBetween: 10,
-            autoplay: {
-                delay: 1500,
-            },
+            // autoplay: {
+            //     delay: 1500,
+            // },
             breakpoints: {
                 560: {
                     slidesPerView: 2,
