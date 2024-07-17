@@ -9,6 +9,8 @@
     <link rel="icon" href="./assets/logo/logo web.png">
     <!-- media screen css -->
     <link rel="stylesheet" href="media.css">
+    <!-- css -->
+    <link rel="stylesheet" href="loading.css">
     <!-- font awsome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- google fonts -->
@@ -21,849 +23,867 @@
     <!-- swiper js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- javaScript -->
-    <script src="./"></script>
+    <script src="index.js"></script>
 
 </head>
 
 <body>
-    <nav>
-        <div class="wrapper">
-            <label for="menu-btn" class="btn menu-btn "><i class="fas fa-bars"></i></label>
-            <div class="logo">
-                <a href="#"><img src="./assets/logo/resetImage.png" alt=""></a>
-            </div>
 
-            <input type="radio" name="slide" id="menu-btn">
-            <input type="radio" name="slide" id="cancel-btn">
+    <div class="loading-page" id="loader">
+        <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M142.4 21.9c5.6 16.8-3.5 34.9-20.2 40.5L96 71.1 96 192c0 53 43 96 96 96s96-43 96-96l0-120.9-26.1-8.7c-16.8-5.6-25.8-23.7-20.2-40.5s23.7-25.8 40.5-20.2l26.1 8.7C334.4 19.1 352 43.5 352 71.1L352 192c0 77.2-54.6 141.6-127.3 156.7C231 404.6 278.4 448 336 448c61.9 0 112-50.1 112-112l0-70.7c-28.3-12.3-48-40.5-48-73.3c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 70.7c0 97.2-78.8 176-176 176c-92.9 0-168.9-71.9-175.5-163.1C87.2 334.2 32 269.6 32 192L32 71.1c0-27.5 17.6-52 43.8-60.7l26.1-8.7c16.8-5.6 34.9 3.5 40.5 20.2zM480 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/>
+        </svg>
 
-            <ul class="nav-links" >
-                <label for="cancel-btn" class=" btn cancel-btn"><i class="fas fa-times"></i></label>
-                <li id="active"><a href="#" id="toggle">Home</a></li>
-                <li><a href="#about-box">About Us</a></li>
-                <li>
-                    <a href="#" class="desktop-item">Services</a>
-                    <input type="checkbox" id="showDrop">
-                    <label for="showDrop" class="mobile-item">Our Services</label>
-                    <ul class="drop-menu">
-                        <li><a href="#">Emergency Service 24hrs</a></li>
-                        <li><a href="#">Radiology Service</a></li>
-                        <li><a href="#">Endoscopy Service</a></li>
-                        <li><a href="#">Infertility Service & More...</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#our-team" class="desktop-item">Our Team</a>
-                    <input type="checkbox" id="showMega">
-                    <label for="showMega" class="mobile-item">Our Team</label>
-                    <div class="mega-box">
-                        <div class="content">
-                            <div class="row">
-                                <img src="./assets/logo/logo png.png" alt="">
-                            </div>
-                            <div class="row">
-                                <header>Design services</header>
-                                <ul class="mega-links">
-                                    <li><a href="#">services 1</a></li>
-                                    <li><a href="#">services 2</a></li>
-                                    <li><a href="#">services 3</a></li>
-                                    <li><a href="#">services 4</a></li>
-                                </ul>
-                            </div>
-                            <div class="row">
-                                <header>Design services</header>
-                                <ul class="mega-links">
-                                    <li><a href="#">services 1</a></li>
-                                    <li><a href="#">services 2</a></li>
-                                    <li><a href="#">services 3</a></li>
-                                    <li><a href="#">services 4</a></li>
-                                </ul>
-                            </div>
-                            <div class="row">
-                                <header>Design services</header>
-                                <ul class="mega-links">
-                                    <li><a href="#">services 1</a></li>
-                                    <li><a href="#">services 2</a></li>
-                                    <li><a href="#">services 3</a></li>
-                                    <li><a href="#">services 4</a></li>
-                                </ul>
+        <div class="name-container">
+            <div class="logo-name">Sarbottam </div>
+        </div>
+
+
+    </div>
+
+    <div id="content">
+        <nav>
+            <div class="wrapper">
+                <label for="menu-btn" class="btn menu-btn "><i class="fas fa-bars"></i></label>
+                <div class="logo">
+                    <a href="#"><img src="./assets/logo/resetImage.png" alt=""></a>
+                </div>
+
+                <input type="radio" name="slide" id="menu-btn">
+                <input type="radio" name="slide" id="cancel-btn">
+
+                <ul class="nav-links">
+                    <label for="cancel-btn" class=" btn cancel-btn"><i class="fas fa-times"></i></label>
+                    <li id="active"><a href="#" id="toggle">Home</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li>
+                        <a href="#Our-Specialities" class="desktop-item">Services</a>
+                        <input type="checkbox" id="showDrop">
+                        <label for="showDrop" class="mobile-item">Our Services</label>
+                        <ul class="drop-menu">
+                            <li><a href="./aboutUs.html">Emergency Service 24hrs</a></li>
+                            <li><a href="./aboutUs.html">Radiology Service</a></li>
+                            <li><a href="./aboutUs.html">Endoscopy Service</a></li>
+                            <li><a href="./aboutUs.html">Infertility Service & More...</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#our-team" class="desktop-item">Deparments</a>
+                        <input type="checkbox" id="showMega">
+                        <label for="showMega" class="mobile-item">Deparments</label>
+                        <div class="mega-box">
+                            <div class="content">
+                                <div class="row">
+                                    <img src="./assets/logo/logo png.png" alt="">
+                                </div>
+                                <div class="row">
+                                    <header>Our Ward's</header>
+                                    <ul class="mega-links">
+                                        <li><a href="./ward.html">A/C Cabin's </a></li>
+                                        <li><a href="./ward.html">A/C General Ward</a></li>
+                                        <li><a href="./ward.html">NICU with ventilator</a></li>
+                                        <li><a href="./ward.html">ICU with ventilator</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Our Specialities</header>
+                                    <ul class="mega-links">
+                                        <li><a href="#">USG & Color Doppler</a></li>
+                                        <li><a href="#">Digital X-Ray Services</a></li>
+                                        <li><a href="#">Echocardiography</a></li>
+                                        <li><a href="#">Lab Test's</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Emergency Contact</header>
+                                    <ul class="mega-links">
+                                        <li><a href="tel:051-523780">051-523780</a></li>
+                                        <li><a href="tel:9802591139">9802591139</a></li>
+                                        <li><a
+                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=Sarbottamhospital9@gmail.com">Email
+                                                Us</a></li>
+                                        <li><a href="https://g.co/kgs/MzTMm6z">Panitanki-8,birgunj</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li><a href="">Contact Us</a></li>
-            </ul>
+                    </li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
 
-            <div class="appointment-cont">
-               <a href="./appointment.html" target="_blank">
-                <button class="appointmentBtn">Book Appointment <span class="material-symbols-outlined">
-                    calendar_month
-                </span>
-            </button>
-               </a>
-            </div>
-        </div>
-    </nav>
-    
-    <main>
-        <div class="hero-cont">
-            <div class="hero-text-cont">
-                <div class="hero-text">
-                    <div class="hero-title">
-                        <h3>WE TAKE CARE OF YOUR HEALTH</h3>
-                    </div>
-
-                    <div class="text-animation">
-                        <p>We Are Providing <br> Best & Affordable <br>
-                            Health Care.
-                        </p>
-                    </div>
-
-                    <div class="text-intro">
-                        <p>Our aim is to deliver the highest quality healthcare services. We believe that everyone
-                            deserves access to excellent medical care without compromising on quality.
-                        </p>
-                    </div>
-
-                    <div class="heroBtn-cont" >
-                        <button><a href="#">Read More</a>
-                            <span class="material-symbols-outlined">
-                                arrow_right_alt
+                <div class="appointment-cont">
+                    <a href="./appointment.html" target="_blank">
+                        <button class="appointmentBtn">Book Appointment <span class="material-symbols-outlined">
+                                calendar_month
                             </span>
                         </button>
-                    </div>
-                </div>
-
-                <div class="hero-img">
-                    <div class="img1 heroImg">
-                        <img src="./assets/img/service webp/hero-img-1.webp" alt="">
-                    </div>
-                    <div class="img2 heroImg">
-                        <img src="./assets/img/service webp/hero-img-2.webp" alt="">
-                    </div>
+                    </a>
                 </div>
             </div>
-        </div>
-    </main>
+        </nav>
 
-    <!-- intro cont -->
-
-    <section>
-        <div class="intro-cont">
-            <div class="intro-list">
-                <div class="intro-box box">
-                    <h2>Don't <strong>Hesitate</strong> To <br> Contact Us</h2>
-                    <button> Make Appointment
-                        <span class="material-symbols-outlined">
-                            calendar_month
-                        </span>
-                    </button>
-                </div>
-
-                <div class="intro-box2 box">
-                    <div class="box2-icon"><img src="./assets/svg/doctor.svg" alt=""></div>
-                    <div class="box2-text">
-                        <span>Need Family Health</span>
-                        <p>We understand the importance of family health overall well-being.</p>
-                    </div>
-                </div>
-
-                <div class="intro-box3 box">
-                    <div class="box2-icon"><img src="./assets/svg/nurse.svg" alt=""></div>
-                    <div class="box2-text">
-                        <span>24 hours service</span>
-                        <p>We take pride in offering 24-hour medical services to ensure that you.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- about cont -->
-    <section id="about-box">
-        <div class="about-cont">
-            <div class="about">
-                <div class="about-img">
-                    <div class="aboutImg1 ">
-                        <img src="./assets/img/service webp/about-img-1.webp" alt="">
-                    </div>
-                    <div class="aboutImg2 ">
-                        <img src="./assets/img/service webp/about-img-2.webp" alt="">
-                        <div class="inner-aboutImg">
-                            <img src="./assets/img/service webp/about-video-img.webp" alt="">
+        <main>
+            <div class="hero-cont">
+                <div class="hero-text-cont">
+                    <div class="hero-text">
+                        <div class="hero-title">
+                            <h3>WE TAKE CARE OF YOUR HEALTH</h3>
                         </div>
-                    </div>
-                </div>
 
-                <div class="aboutText-cont">
-                    <div class="about-section">
-                        <h3>ABOUT SARBOTTAM</h3>
-                        <div class="about-para">
-                            <p>Our Best Services & Poplular Treatment Here.</p>
-                        </div>
-                        <div class="aboutIntro">
-                            <p>We take pride in offering a wide range of best-in-class medical services and popular treatments to create to your diverse healthcare needs.
+                        <div class="text-animation">
+                            <p>We Are Providing <br> Best & Affordable <br>
+                                Health Care.
                             </p>
                         </div>
-                    </div>
-                    <div class="about-service">
-                        <div>
-                            <li>
-                                <span class="material-symbols-outlined">
-                                    check_circle
-                                </span>
-                                Mental health Solutions
-                            </li>
+
+                        <div class="text-intro">
+                            <p>Our aim is to deliver the highest quality healthcare services. We believe that everyone
+                                deserves access to excellent medical care without compromising on quality.
+                            </p>
                         </div>
 
-                        <div>
-                            <li>
+                        <div class="heroBtn-cont">
+                            <button><a href="#">Read More</a>
                                 <span class="material-symbols-outlined">
-                                    check_circle
+                                    arrow_right_alt
                                 </span>
-                                Rapid Patient Improvement
-                            </li>
-                        </div>
-
-                        <div>
-                            <li>
-                                <span class="material-symbols-outlined">
-                                    check_circle
-                                </span>
-                                World Class Treatment
-                            </li>
+                            </button>
                         </div>
                     </div>
 
-                    <div class="aboutBtn-cont">
-                        <button>Read More
+                    <div class="hero-img">
+                        <div class="img1 heroImg">
+                            <img src="./assets/img/service webp/hero-img-1.webp" alt="">
+                        </div>
+                        <div class="img2 heroImg">
+                            <img src="./assets/img/service webp/hero-img-2.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- intro cont -->
+
+        <section>
+            <div class="intro-cont">
+                <div class="intro-list">
+                    <div class="intro-box box">
+                        <h2>Don't <strong>Hesitate</strong> To <br> Contact Us</h2>
+                        <button> Make Appointment
                             <span class="material-symbols-outlined">
-                                arrow_right_alt
+                                calendar_month
                             </span>
                         </button>
                     </div>
+
+                    <div class="intro-box2 box">
+                        <div class="box2-icon"><img src="./assets/svg/doctor.svg" alt=""></div>
+                        <div class="box2-text">
+                            <span>Need Family Health</span>
+                            <p>We understand the importance of family health overall well-being.</p>
+                        </div>
+                    </div>
+
+                    <div class="intro-box3 box">
+                        <div class="box2-icon"><img src="./assets/svg/nurse.svg" alt=""></div>
+                        <div class="box2-text">
+                            <span>24 hours service</span>
+                            <p>We take pride in offering 24-hour medical services to ensure that you.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="appoBox">
-        <div class="appointment-Container">
-            <div class="appo-text">
-                <div class="img">
-                    <img src="./assets/svg/svgviewer-png-output.png" alt="">
-                </div>
-                <div class="aapo-texts">
-                    <h3>Open For Appointments</h3>
-                    <p>We are delighted to announce that our doors are open, and we are now accepting appointments to
-                        serve you better.</p>
-                </div>
-            </div>
-            <div class="appointment-cont1">
-                <a href="./appointment.html" target="_blank">
-                    <button class="appointmentBtn1">Make Appointment <span class="material-symbols-outlined">
-                        calendar_month
-                    </span>
-                </button>
-                </a>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="why-choose-us">
-
-        <div class="why-choose-us-left">
-            <h3>Why Choose Us?</h3>
-            <div class="why-choose-box-container">
-                <div class="why-choose-box">
-                    <i class="fa-solid fa-check"></i>
-                    <div class="why-choose-box-text">
-                        <strong>NICU with ventiltor</strong>
+        <!-- about cont -->
+        <section id="about-box">
+            <div class="about-cont">
+                <div class="about">
+                    <div class="about-img">
+                        <div class="aboutImg1 ">
+                            <img src="./assets/img/service webp/about-img-1.webp" alt="">
+                        </div>
+                        <div class="aboutImg2 ">
+                            <img src="./assets/img/service webp/about-img-2.webp" alt="">
+                            <div class="inner-aboutImg">
+                                <img src="./assets/img/service webp/about-video-img.webp" alt="">
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="why-choose-box">
+                    <div class="aboutText-cont">
+                        <div class="about-section">
+                            <h3>ABOUT SARBOTTAM</h3>
+                            <div class="about-para">
+                                <p>Our Best Services & Poplular Treatment Here.</p>
+                            </div>
+                            <div class="aboutIntro">
+                                <p>We take pride in offering a wide range of best-in-class medical services and popular
+                                    treatments to create to your diverse healthcare needs.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-service">
+                            <div>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        check_circle
+                                    </span>
+                                    Mental health Solutions
+                                </li>
+                            </div>
 
-                    <i class="fa-solid fa-check"></i>
+                            <div>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        check_circle
+                                    </span>
+                                    Rapid Patient Improvement
+                                </li>
+                            </div>
 
-                    <div class="why-choose-box-text">
-                        <strong>USG & Color Doppler Services</strong>
-                    </div>
-                </div>
+                            <div>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        check_circle
+                                    </span>
+                                    World Class Treatment
+                                </li>
+                            </div>
+                        </div>
 
-                <div class="why-choose-box">
-
-                    <i class="fa-solid fa-check"></i>
-
-                    <div class="why-choose-box-text">
-                        <strong>Infertility Service</strong>
-                    </div>
-                </div>
-
-                <div class="why-choose-box">
-
-                    <i class="fa-solid fa-check"></i>
-
-                    <div class="why-choose-box-text">
-                        <strong>Lab Test's</strong>
-                    </div>
-                </div>
-
-                <div class="why-choose-box">
-
-                    <i class="fa-solid fa-check"></i>
-
-                    <div class="why-choose-box-text">
-                        <strong>Echocardiography</strong>
-                    </div>
-                </div>
-
-                <div class="why-choose-box">
-
-                    <i class="fa-solid fa-check"></i>
-
-                    <div class="why-choose-box-text">
-                        <strong>Digital X-Ray Services</strong>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-
-        <div class="why-choose-us-right">
-            <h3>Emergency?<br />
-                Contact Us
-            </h3>
-            <p>"Welcome to Sarbottam Hospital, where your health and well-being are our top priority. At Sarbottam
-                Hospital, we are committed to providing exceptional patient-centered care through state-of-the-art
-                medical facilities and a
-                compassionate, experienced healthcare team ."</p>
-            <!--==container====-->
-            <div class="w-right-contact-container">
-
-                <div class="w-right-contact-box">
-                    <i class="fa-solid fa-phone"></i>
-
-                    <div class="w-right-contact-box-text callUs">
-                        <span>Call Us Now</span>
-                        <strong>051-523780 </strong>
-                    </div>
-                </div>
-
-                <div class="w-right-contact-box">
-                    <i class="fa-solid fa-envelope"></i>
-
-                    <div class="w-right-contact-box-text">
-                        <span>Mail Us</span>
-                        <strong>Sarbottamhospital9@gmail.com</strong>
+                        <div class="aboutBtn-cont">
+                            <button>Read More
+                                <span class="material-symbols-outlined">
+                                    arrow_right_alt
+                                </span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-    </section> 
-
-    <!--==Team===========================-->
-    <section id="our-team">
-
-
-        <div class="our-team-heading">
-            <h3>Meet Our Specialist</h3>
-            <p>Our Experienced Doctor's Team</p>
-        </div>
-
-
-        <div class="team-box-container">
-            <!-- Swiper -->
-            <div class="swiper mySwiperteam">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-
-                        <div class="team-box">
-
-                            <div class="team-img">
-                                <img alt="" src="./images/webp/dr.cs.webp">
-                            </div>
-
-                            <div class="team-text">
-                                <strong>Dr. Chitranjan Shah</strong>
-                                <span>Uro Specialist</span>
-                            </div>
-                        </div>
+        <section class="appoBox">
+            <div class="appointment-Container">
+                <div class="appo-text">
+                    <div class="img">
+                        <img src="./assets/svg/svgviewer-png-output.png" alt="">
                     </div>
-
-                    <div class="swiper-slide">
-
-                        <div class="team-box">
-
-                            <div class="team-img">
-                                <img alt="" src="./images/webp/dr.am.webp">
-                            </div>
-
-                            <div class="team-text">
-                                <strong>Dr. Atindra Mishra</strong>
-                                <span>Paediatric & Neonatology Specialist</span>
-                            </div>
-                        </div>
+                    <div class="aapo-texts">
+                        <h3>Open For Appointments</h3>
+                        <p>We are delighted to announce that our doors are open, and we are now accepting appointments
+                            to
+                            serve you better.</p>
                     </div>
-
-                    <div class="swiper-slide">
-
-                        <div class="team-box">
-
-                            <div class="team-img">
-                                <img alt="" src="./images/webp/dr.dk.webp">
-                            </div>
-
-                            <div class="team-text">
-                                <strong>Dr. Dipak Kr. Kushwaha</strong>
-                                <span>Internal Medicine Specialist</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-
-                        <div class="team-box">
-
-                            <div class="team-img">
-                                <img alt="" src="./images/webp/dr.kaushal.webp">
-                            </div>
-
-                            <div class="team-text">
-                                <strong>Dr. Kaushal Singh</strong>
-                                <span>Orthopedics Specialist</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-
-                        <div class="team-box">
-
-                            <div class="team-img">
-                                <img alt="" src="./images/webp/dr.am.webp">
-                            </div>
-
-                            <div class="team-text">
-                                <strong>Dr. Meeta Maharjan Jha</strong>
-                                <span>Obst. & Gynaecology Specialist</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-
-                        <div class="team-box">
-
-                            <div class="team-img">
-                                <img alt="" src="./images/webp/dr.rp_sah.webp">
-                            </div>
-
-                            <div class="team-text">
-                                <strong>Dr. Ram Pukar Sah</strong>
-                                <span>Anaesthesiology Specialist</span>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--wrapper-end-->
-                <div class="swiper-pagination"></div>
-            </div><!--swiper-end-->
-        </div>
-    </section>
-
-
-    <!--=facilities===========================-->
-    <section id="Our-Specialities ">
-
-        <!--**heading*****************-->
-        <div class="our-specialities-heading">
-            <h3>Our Specialities</h3>
-            <p>हाम्रो विशेषताहरु</p>
-        </div>
-
-        <!--**facilities-container***********-->
-        <div class="facilities-box-container">
-            <!-- Swiper -->
-            <div class="swiper mySwiperFacility">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="facility-img ">
-                                <img alt="" src="./assets/img/service webp/uro.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>Uro Surgery</strong>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/general surgon.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>General Surgery</strong>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/anesthlogy.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>Anaesthesiology</strong>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/internal medicine.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>Internal Medicine</strong>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/paedi2.webp">
-                            </div>
-   
-                            <div class="facilities-text">
-                                <strong>Paediatric & Neonatology</strong>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/video-Xray.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>Video Endoscopy</strong>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/lab.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>Lab</strong>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/nicu.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>N.I.C.U</strong>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/ac ward.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>A/C General Ward</strong>
-                            </div>
-                        </div>
-                    </div>
-                  
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/icu1.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>I.C.U</strong>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/phyrmacy.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>pharmacy</strong>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/operation threater.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>Operation Theather</strong>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                     <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/ortho.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>Orthopedics</strong>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/gyno.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>Obst. & Gynaecology</strong>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/neuro.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>Neuro Surgery</strong>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/cardio.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>Cardio & Vascular Surgery</strong>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/oral & maxillo.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>Oral & Maxillofacial Surgery</strong>
-                            </div>
-                        </div>
-                    </div> 
-                    
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/psychi.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>Psychiatric</strong>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/ent.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>ENT</strong>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="swiper-slide">
-
-                        <div class="facilities-box">
-
-                            <div class="team-img ">
-                                <img alt="" src="./assets/img/service webp/dermatology.webp">
-                            </div>
-
-                            <div class="facilities-text">
-                                <strong>Dermatology</strong>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
-            <!--swiper-end-->
-        </div>
-    </section><!--FACILITY-END-->
-
-    <!-- footer -->
-    <footer>
-        <div class="footer-container">
-            <!--**comoany-box**-->
-            <div class="footer-company-box">
-                <!--logo-->
-                <div class="footer-logo-cont">
-                    <a href="#" class="logo"><img src="./assets/logo/resetImage.png" alt=""></a>
-                    <!--details-->
-                </div>
-
-                <!--social-box-->
-                <div class="footer-social">
-                    <a href="https://www.facebook.com/p/Sarbottam-Hospital-100087681474129/"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                    <a
-                        href="https://www.google.com/maps/place/Sarbottam+Women+And+Child+Hospital/@27.0167973,84.8837037,681m/data=!3m1!1e3!4m6!3m5!1s0x39935444864e9b5b:0xfee43ba05e1fd274!8m2!3d27.0167973!4d84.8858924!16s%2Fg%2F11rdhps3z?entry=ttu"><i
-                            class="fa-solid fa-location-dot"></i></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <div class="appointment-cont1">
+                    <a href="./appointment.html" target="_blank">
+                        <button class="appointmentBtn1">Make Appointment <span class="material-symbols-outlined">
+                                calendar_month
+                            </span>
+                        </button>
+                    </a>
                 </div>
             </div>
-            <!--**link-box***-->
-            <div class="footer-link-box">
-                <strong>Main Link's</strong>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Services</a></li>
-                </ul>
+        </section>
+
+
+        <section id="why-choose-us">
+
+            <div class="why-choose-us-left">
+                <h3>Why Choose Us?</h3>
+                <div class="why-choose-box-container">
+                    <div class="why-choose-box">
+                        <i class="fa-solid fa-check"></i>
+                        <div class="why-choose-box-text">
+                            <strong>NICU with ventiltor</strong>
+                        </div>
+                    </div>
+
+                    <div class="why-choose-box">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        <div class="why-choose-box-text">
+                            <strong>USG & Color Doppler Services</strong>
+                        </div>
+                    </div>
+
+                    <div class="why-choose-box">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        <div class="why-choose-box-text">
+                            <strong>Infertility Service</strong>
+                        </div>
+                    </div>
+
+                    <div class="why-choose-box">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        <div class="why-choose-box-text">
+                            <strong>Lab Test's</strong>
+                        </div>
+                    </div>
+
+                    <div class="why-choose-box">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        <div class="why-choose-box-text">
+                            <strong>Echocardiography</strong>
+                        </div>
+                    </div>
+
+                    <div class="why-choose-box">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        <div class="why-choose-box-text">
+                            <strong>Digital X-Ray Services</strong>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <!--**link-box***-->
-            <div class="footer-link-box">
-                <strong>Our Specialities</strong>
-                <ul>
-                    <li><a href="#">Clean & Healthy Environment</a></li>
-                    <li><a href="#">Large Parking Space</a></li>
-                    <li><a href="#">Well Managed Bed Facility</a></li>
-                    <li><a href="#">Well Supervised Bed Services </a></li>
-                </ul>
+
+            <div class="why-choose-us-right">
+                <h3>Emergency?<br />
+                    Contact Us
+                </h3>
+                <p>"Welcome to Sarbottam Hospital, where your health and well-being are our top priority. At Sarbottam
+                    Hospital, we are committed to providing exceptional patient-centered care through state-of-the-art
+                    medical facilities and a
+                    compassionate, experienced healthcare team ."</p>
+                <!--==container====-->
+                <div class="w-right-contact-container">
+
+                    <div class="w-right-contact-box">
+                        <i class="fa-solid fa-phone"></i>
+
+                        <div class="w-right-contact-box-text callUs">
+                            <span>Call Us Now</span>
+                            <strong>051-523780 </strong>
+                        </div>
+                    </div>
+
+                    <div class="w-right-contact-box">
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <div class="w-right-contact-box-text">
+                            <span>Mail Us</span>
+                            <strong>Sarbottamhospital9@gmail.com</strong>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!--**link-box***-->
-            <div class="footer-link-box">
-                <strong>External Link's</strong>
-                <ul>
-                    <li><a href="#">Our Product's</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Disclaimer</a></li>
-                    <li><a href="#">Trem's and Condition's</a></li>
-                </ul>
+
+        </section>
+
+        <!--==Team===========================-->
+        <section id="our-team">
+
+
+            <div class="our-team-heading">
+                <h3>Meet Our Specialist</h3>
+                <p>Our Experienced Doctor's Team</p>
             </div>
 
 
-        </div>
+            <div class="team-box-container">
+                <!-- Swiper -->
+                <div class="swiper mySwiperteam">
+                    <div class="swiper-wrapper">
 
-        <!--**bottom**********************-->
-        <div class="footer-bottom">
-            <span class="footer-owner">Made With &#9829; Udit Sah</span>
-            <span class="copyright">&#169; Copyright 2024 - Sarbottam Hospital Pvt.ltd</span>
-        </div>
-    </footer>
+                        <div class="swiper-slide">
+
+                            <div class="team-box">
+
+                                <div class="team-img">
+                                    <img alt="" src="./images/webp/dr.cs.webp">
+                                </div>
+
+                                <div class="team-text">
+                                    <strong>Dr. Chitranjan Shah</strong>
+                                    <span>Uro Specialist</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="team-box">
+
+                                <div class="team-img">
+                                    <img alt="" src="./images/webp/dr.am.webp">
+                                </div>
+
+                                <div class="team-text">
+                                    <strong>Dr. Atindra Mishra</strong>
+                                    <span>Paediatric & Neonatology Specialist</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="team-box">
+
+                                <div class="team-img">
+                                    <img alt="" src="./images/webp/dr.dk.webp">
+                                </div>
+
+                                <div class="team-text">
+                                    <strong>Dr. Dipak Kr. Kushwaha</strong>
+                                    <span>Internal Medicine Specialist</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="team-box">
+
+                                <div class="team-img">
+                                    <img alt="" src="./images/webp/dr.kaushal.webp">
+                                </div>
+
+                                <div class="team-text">
+                                    <strong>Dr. Kaushal Singh</strong>
+                                    <span>Orthopedics Specialist</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="team-box">
+
+                                <div class="team-img">
+                                    <img alt="" src="./images/webp/dr.am.webp">
+                                </div>
+
+                                <div class="team-text">
+                                    <strong>Dr. Meeta Maharjan Jha</strong>
+                                    <span>Obst. & Gynaecology Specialist</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="team-box">
+
+                                <div class="team-img">
+                                    <img alt="" src="./images/webp/dr.rp_sah.webp">
+                                </div>
+
+                                <div class="team-text">
+                                    <strong>Dr. Ram Pukar Sah</strong>
+                                    <span>Anaesthesiology Specialist</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--wrapper-end-->
+                    <div class="swiper-pagination"></div>
+                </div><!--swiper-end-->
+            </div>
+        </section>
+
+
+        <!--=facilities===========================-->
+        <section id="Our-Specialities ">
+
+            <!--**heading*****************-->
+            <div class="our-specialities-heading">
+                <h3>Our Specialities</h3>
+                <p>हाम्रो विशेषताहरु</p>
+            </div>
+
+            <!--**facilities-container***********-->
+            <div class="facilities-box-container">
+                <!-- Swiper -->
+                <div class="swiper mySwiperFacility">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="facility-img ">
+                                    <img alt="" src="./assets/img/service webp/uro.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>Uro Surgery</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/general surgon.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>General Surgery</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/anesthlogy.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>Anaesthesiology</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/internal medicine.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>Internal Medicine</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/paedi2.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>Paediatric & Neonatology</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/video-Xray.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>Video Endoscopy</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/lab.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>Lab</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/nicu.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>N.I.C.U</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/ac ward.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>A/C General Ward</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/icu1.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>I.C.U</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/phyrmacy.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>pharmacy</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/operation threater.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>Operation Theather</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/ortho.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>Orthopedics</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/gyno.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>Obst. & Gynaecology</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/neuro.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>Neuro Surgery</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/cardio.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>Cardio & Vascular Surgery</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/oral & maxillo.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>Oral & Maxillofacial Surgery</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/psychi.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>Psychiatric</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/ent.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>ENT</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="facilities-box">
+
+                                <div class="team-img ">
+                                    <img alt="" src="./assets/img/service webp/dermatology.webp">
+                                </div>
+
+                                <div class="facilities-text">
+                                    <strong>Dermatology</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!--swiper-end-->
+            </div>
+        </section><!--FACILITY-END-->
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <!--**comoany-box**-->
+                <div class="footer-company-box">
+                    <!--logo-->
+                    <div class="footer-logo-cont">
+                        <a href="#" class="logo"><img src="./assets/logo/resetImage.png" alt=""></a>
+                        <!--details-->
+                    </div>
+
+                    <!--social-box-->
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/p/Sarbottam-Hospital-100087681474129/"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a
+                            href="https://www.google.com/maps/place/Sarbottam+Women+And+Child+Hospital/@27.0167973,84.8837037,681m/data=!3m1!1e3!4m6!3m5!1s0x39935444864e9b5b:0xfee43ba05e1fd274!8m2!3d27.0167973!4d84.8858924!16s%2Fg%2F11rdhps3z?entry=ttu"><i
+                                class="fa-solid fa-location-dot"></i></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!--**link-box***-->
+                <div class="footer-link-box">
+                    <strong>Main Link's</strong>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+                <!--**link-box***-->
+                <div class="footer-link-box">
+                    <strong>Our Specialities</strong>
+                    <ul>
+                        <li><a href="#">Clean & Healthy Environment</a></li>
+                        <li><a href="#">Large Parking Space</a></li>
+                        <li><a href="#">Well Managed Bed Facility</a></li>
+                        <li><a href="#">Well Supervised Bed Services </a></li>
+                    </ul>
+                </div>
+                <!--**link-box***-->
+                <div class="footer-link-box">
+                    <strong>External Link's</strong>
+                    <ul>
+                        <li><a href="#">Our Product's</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Trem's and Condition's</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!--**bottom**********************-->
+            <div class="footer-bottom">
+                <span class="footer-owner">Made With &#9829; Udit Sah</span>
+                <span class="copyright">&#169; Copyright 2024 - Sarbottam Hospital Pvt.ltd</span>
+            </div>
+        </footer>
+    </div>
 
 
     <!-- swiper js -->
@@ -875,13 +895,14 @@
         const toggle = document.getElementById('toggle');
         const sidebar = document.getElementById('sidebar');
 
-        document.onclick = function(e){
-            if(e.target.id !== "sidebar" && e.target.id !== "toggle"){
+        document.onclick = function (e) {
+            if (e.target.id !== "sidebar" && e.target.id !== "toggle") {
                 toggle.classList.remove(active);
                 sidebar.classList.remove(active);
-            }}
+            }
+        }
 
-             toggle.onclick = function(){
+        toggle.onclick = function () {
             toggle.classList.toggle('active')
             sidebar.classList.toggle('active');
         }
@@ -936,5 +957,17 @@
     </script>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- js -->
+<script src="loading.js"></script>
+
+<script>
+    setTimeout(function() {
+      document.body.style.overflow = 'auto';
+    }, 90000); // Your loading transition's length in miliseconds.
+  </script>
+
 
 </html>
