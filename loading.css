@@ -44,18 +44,18 @@ body{
 }
 
 #svg{
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
     stroke: #f7a582;
     fill-opacity: 0;
     stroke-width: 5px;
-    stroke-dasharray: 4500;
+    stroke-dasharray: 6000;
     animation: draw 8s ease;
 }
 
 @keyframes draw {
     0%{
-        stroke-dashoffset: 4500;
+        stroke-dashoffset: 6000;
     }
     100%{
         stroke-dashoffset: 0;
