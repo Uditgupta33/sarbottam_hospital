@@ -28,7 +28,16 @@ gsap.fromTo(
 
 var loader = document.getElementById("loader");
 
-window.addEventListener("load", function(){
-    // loader.style.display = "none";
+// window.addEventListener("load", function(){
+//     // loader.style.display = "none";
+//     // document.getElementById("content").style.display="block";
+// })
+
+setTimeout(function() {
+    loader.style.display = "none";
+}, 8000);
+
+setTimeout(function() {
+    loader.style.display = "none";
     document.getElementById("content").style.display="block";
-})
+}, 3300);

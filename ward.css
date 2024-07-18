@@ -81,7 +81,7 @@ header a:hover{
 }
 
 .slider .list .item .content .description{
-  color: #ffec1b;
+  color: black;
   font-size: 14px;
   font-weight: 600;
   background: rgba(245, 243, 241, 0.2);
@@ -329,6 +329,16 @@ header a:hover{
         padding-right: 0;
     }
     .slider .list .item .content .title{
-        font-size: 50px;
+        font-size: 40px;
     }
+    .slider .list .item .content .type{
+        font-size: 40px;
+    }
+    .slider .list .item .content .description{
+        font-size: 20px;
+    }
+    .slider .list .item img{
+        object-fit: fill;
+    }
+
 }

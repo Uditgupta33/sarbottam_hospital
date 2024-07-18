@@ -344,6 +344,12 @@ main{
     background-color: #f7a582;
 }
 
+.intro-box button a{
+    text-decoration: none;
+    color: currentColor;
+    cursor: pointer;
+}
+
 .box{
     justify-content: space-around;
 }
@@ -513,6 +519,10 @@ main{
     cursor: pointer;
 }
  
+.aboutBtn-cont button a{
+    text-decoration: none;
+    color: currentColor;
+}
 /* appointment-Container */
 
 .appoBox{
@@ -676,6 +686,11 @@ main{
     font-size: 1rem;
     color: #ffffff;
     font-weight: 600;
+}
+
+.w-right-contact-box-text strong a{
+    text-decoration: none;
+    color: currentColor;
 }
 
 /*==our-team====================*/
