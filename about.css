@@ -340,4 +340,7 @@ header a:hover{
     .slider .list .item img{
         object-fit: fill;
     }
+    .slider .list .item .content .button button{
+        display: none;
+    }
 }
