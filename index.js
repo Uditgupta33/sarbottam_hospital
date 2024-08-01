@@ -1,14 +1,19 @@
-// const toggle = document.getElementById('toggle');
-// const sidebar = document.getElementById('sidebar');
+document.querySelectorAll('.nav-link').forEach(function(link) {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        var popupId = this.getAttribute('data-popup');
+        document.getElementById(popupId).style.display = 'block';
+    });
+});
 
-// document.onclick = function(e){
-//     if(e.target.id !== "sidebar" && e.target.id !== "toggle"){
-//         toggle.classList.remove(active);
-//         sidebar.classList.remove(active);
-//     }
-// }
+document.querySelectorAll('.close').forEach(function(closeButton) {
+    closeButton.addEventListener('click', function() {
+        this.closest('.popup').style.display = 'none';
+    });
+});
 
-// toggle.onclick = function(){
-//     toggle.classList.toggle('active');
-//     sidebar.classList.toggle('active');
-// }
+window.addEventListener('click', function(event) {
+    if (event.target.classList.contains('popup')) {
+        event.target.style.display = 'none';
+    }
+});

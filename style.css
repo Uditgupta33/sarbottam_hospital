@@ -71,7 +71,7 @@ body::-webkit-scrollbar{
     transition: all 0.3s ease;
 }
 .nav-links li a:hover{
-    background: #f7a582;
+    background: #f7a582;  
 }
 /* mobile items */
 .nav-links .mobile-item{
@@ -90,7 +90,7 @@ body::-webkit-scrollbar{
 
 .nav-links li:hover .drop-menu,
 .nav-links li:hover .mega-box{
-    top:80px;
+    top:68px;
     opacity: 1;
     visibility: visible;
     transition: all 0.3s ease;
@@ -177,9 +177,7 @@ body::-webkit-scrollbar{
     right: 30px;
     top: 10px;
 }
-.call{
-    padding-right: 6px;
-}
+
 
 .appointment-cont,
 .appointment-cont1{
@@ -187,6 +185,22 @@ body::-webkit-scrollbar{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.appointment-cont1 button:hover,
+.intro-box button:hover,
+.appointment-cont button:hover{
+    background-color: #fff;
+    color: orangered;
+    border: 2px solid orangered;
+    transition: 0.8s all ease;
+}
+
+.aboutBtn-cont button:hover{
+    background-color: #f7a582;
+    color: #07332F;
+    border: 1px solid black;
+    transition: 0.2s all ease;
 }
 
 .appointmentBtn,
@@ -263,6 +277,13 @@ main{
     width: 100%;
     height: 51px;
     padding-top: 6%;
+}
+
+.heroBtn-cont button:hover{
+    background-color: #fff;
+    color: orangered;
+    border: 2px solid orangered;
+    transform: 0.2s all ease;
 }
 
 .hero-cont button{
@@ -764,7 +785,7 @@ main{
     color: #303030;
     font-size: 0.9rem;
     margin-top: 5px;
-    height: 20px;
+    height: 26px;
 }
 
 

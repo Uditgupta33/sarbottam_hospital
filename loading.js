@@ -35,9 +35,11 @@ var loader = document.getElementById("loader");
 
 setTimeout(function() {
     loader.style.display = "none";
-}, 8000);
+}, 8000); 
+// 8000
 
 setTimeout(function() {
     loader.style.display = "none";
     document.getElementById("content").style.display="block";
 }, 3300);
+// 3300

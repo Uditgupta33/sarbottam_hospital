@@ -184,6 +184,9 @@ form button:hover{
     .logo-cont img{
         width: 250px;
     }
+    .field .item{
+        font-size: 13px;
+    }
 
 }
 
