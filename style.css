@@ -280,10 +280,15 @@ main{
 }
 
 .heroBtn-cont button:hover{
-    background-color: #fff;
-    color: orangered;
+    background-color: #f3d8cc;
     border: 2px solid orangered;
-    transform: 0.2s all ease;
+    color: #07332F;
+    transition: 0.5s all ease;
+    color: orangered;
+}
+
+.heroBtn-cont button a:hover{
+    color: orangered;
 }
 
 .hero-cont button{
@@ -497,6 +502,7 @@ main{
     color: #07332F;
     padding-top: 10px;
 }
+
 
 .aboutIntro p{
     font-size: 20px;
