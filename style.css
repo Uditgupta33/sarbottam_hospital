@@ -989,9 +989,11 @@ footer{
 
   .swiper-slide img {
     display: block;
-    width: 250px;
+    width: 200px;
+    margin-left: 35px;
     height: 100%;
     object-fit: cover;
+    border-radius: 15px;
   }
   
 
