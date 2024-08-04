@@ -22,9 +22,9 @@
     height: 740px;
   }
   .aboutText-cont{
-    width: 95%;
+    /* width: 95%; */
     /* height: 600px; */
-    margin-left: 0 5px;
+    /* margin-left: 0 5px; */
   }
   .aboutIntro{
     margin: 10px;
@@ -526,7 +526,8 @@
     height: 640px;
   }
   .about-para p{
-    font-size: 25px;
+    font-size: 20px;
+    width: 80%;
   }
 
 }

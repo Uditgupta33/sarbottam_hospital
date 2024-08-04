@@ -959,6 +959,9 @@ footer{
     width: 90%;
     margin: auto;
 }
+.footer-bottom a{
+    text-decoration: none;
+}
 .footer-bottom span{
     color: #ffffff;
     font-size: 0.9rem;
